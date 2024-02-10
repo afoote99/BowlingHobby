@@ -1,0 +1,22 @@
+﻿@*
+*@
+@{
+    ViewData["Title"] = "Calculator";
+}
+
+<h2>Bowling Tutor Calculator</h2>
+
+<form id="calculatorForm">
+    <div class="form-group">
+        <label for="hoursInput">Number of Hours:</label>
+        <input type="number" class="form-control" id="hoursInput" placeholder="Enter hours" min="1">
+    </div>
+    <div class="form-group">
+        <label for="rate">Hourly Rate:</label>
+        <input type="text" class="form-control" id="rate" value="50" readonly>
+    </div>
+    <button type="button" class="btn btn-primary" id="calculateButton">Calculate Total</button>
+</form>
+
+<div id="totalOutput">Total: $0</div>
+<script src="~/js/site.js"></script>
